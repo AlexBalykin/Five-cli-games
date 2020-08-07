@@ -1,0 +1,23 @@
+{
+  "name": "Hexlet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBalykin/frontend-project-lvl1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexBalykin/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/AlexBalykin/frontend-project-lvl1#readme"
+}
