@@ -8,3 +8,6 @@ publish:
 
 git:
 	git push -u origin master
+
+lint:
+	npx eslint .
