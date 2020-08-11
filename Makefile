@@ -1,4 +1,10 @@
-install: npm install
+install: install-deps
+
+run:
+	bin/nodejs-package.js 10
+
+install-deps:
+	npm ci
 
 bg:
 	node bin/brain-games.js
