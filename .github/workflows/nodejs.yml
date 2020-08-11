@@ -40,10 +40,10 @@ jobs:
         # Run Linter
         run: |
           make lint
-      - uses: AlexBalykin/frontend-project-lvl1
+       uses: paambaati/codeclimate-action@v2.6.0
         # Add Code Climate secret key
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.fb4d647bc49d60c0ef82539f2945b58c4df4a87973622bc0df03cf36f250c428 }}
         with:
           coverageCommand: make test-coverage
           debug: true
