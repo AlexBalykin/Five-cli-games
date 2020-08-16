@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const rnd = (num) => Math.floor(Math.random() * Math.floor(num));
+
 const evenOrNotEven = (num) => {
   if (num % 2 === 0) {
     return 'yes';
@@ -13,7 +15,7 @@ const even = () => {
   console.log(`Hello, ${userName}!`);
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const arr = [15, 6, 7];
+  const arr = [rnd(15), rnd(15), rnd(15)];
   for (const i of arr) {
     console.log(`Question: ${i}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -23,7 +25,9 @@ const even = () => {
     }
 
     if (evenOrNotEven(i) !== userAnswer) {
-      return console.log(`'"yes" is wrong answer ;(. Correct answer was "no". Let's try again ${userName}`);
+      return console.log(
+        `'"yes" is wrong answer ;(. Correct answer was "no". Let's try again ${userName}`
+      );
     }
   }
   console.log(`Congratulations, ${userName}!`);
