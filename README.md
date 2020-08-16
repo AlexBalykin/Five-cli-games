@@ -2,3 +2,5 @@
 
 
 [![Node CI](https://github.com/AlexBalykin/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/AlexBalykin/frontend-project-lvl1/actions)
+
+https://asciinema.org/a/KVtWG8RhR81vBHchcmOGsc9xv
