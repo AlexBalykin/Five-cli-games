@@ -1,11 +1,21 @@
 import readlineSync from 'readline-sync';
 
+const rndSymbol = () => {
+  if (Math.random() < 0.5) {
+    return '+';
+  }
+  if (Math.random() > 0.3) {
+    return '-';
+  }
+  return '*';
+};
+
 const rnd = (num) => Math.floor(Math.random() * Math.floor(num));
 
 const strNum = () => {
   let a = String(rnd(10));
   let b = String(rnd(10));
-  return `${a} + ${b}`;
+  return `${a} ${rndSymbol()} ${b}`;
 };
 
 const calc = () => {
@@ -34,4 +44,3 @@ const calc = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 export default calc;
-
