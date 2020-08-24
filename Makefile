@@ -13,5 +13,8 @@ lint:
 publish:
 	npm publish
 
+link:
+	sudo npm link
+
 git:
 	git push -u origin master

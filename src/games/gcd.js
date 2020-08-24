@@ -1,9 +1,6 @@
-import gameEngine from '../games engine.js';
+import gameEngine from '../engine.js';
 
-const generateRandomNumber = (min, max) => {
-  const rand = min - 0.5 + Math.random() * (max - min + 1);
-  return Math.round(rand);
-};
+import { generateRandomNumber, quantityRounds } from '../index.js';
 
 const getGcd = (a, b) => {
   if (b === 0) {
@@ -21,8 +18,6 @@ const generateRound = () => {
   const answer = getGcd(number1, number2);
   return [question, answer];
 };
-
-const quantityRounds = 3;
 
 const generateRounds = () => {
   const rounds = [];
