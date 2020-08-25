@@ -1,6 +1,6 @@
 import gameEngine from '../engine.js';
 
-import { generateRandomNumber, quantityRounds } from '../index.js';
+import { generateRandomNumber, quantityRounds } from '../tools.js';
 
 const getSign = () => {
   const operator = generateRandomNumber(0, 2);
@@ -50,6 +50,4 @@ const generateRounds = () => {
 const roundsForUser = generateRounds();
 const description = 'What is the result of the expression?';
 
-const playInCalculator = () => gameEngine(description, roundsForUser);
-
-export default playInCalculator;
+export default () => gameEngine(description, roundsForUser);

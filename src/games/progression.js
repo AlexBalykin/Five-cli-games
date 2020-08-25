@@ -1,26 +1,28 @@
 import gameEngine from '../engine.js';
 
-import { generateRandomNumber, quantityRounds } from '../index.js';
+import { generateRandomNumber, quantityRounds } from '../tools.js';
 
 const progressionLength = 8;
 
-const getQuestion = (number1, step, secretNumber) => {
-  const quest = [];
+const getQuestion = (number, step, secretNumber) => {
+  const question = [];
+
   for (let i = 0; i < progressionLength; i += 1) {
-    const current = number1 + i * step;
+    const current = number + i * step;
     const element = i === secretNumber ? '..' : `${current}`;
-    quest.push(element);
+    question.push(element);
   }
-  return quest.join(' ');
+
+  return question.join(' ');
 };
 
 const generateRound = () => {
-  const number1 = generateRandomNumber(1, 10);
+  const number = generateRandomNumber(1, 10);
   const step = generateRandomNumber(2, 4);
   const secretNumber = generateRandomNumber(0, progressionLength - 1);
 
-  const question = getQuestion(number1, step, secretNumber);
-  const answer = number1 + step * secretNumber;
+  const question = getQuestion(number, step, secretNumber);
+  const answer = number + step * secretNumber;
 
   return [question, answer];
 };
@@ -38,5 +40,4 @@ const generateRounds = () => {
 const roundsForUser = generateRounds();
 const description = 'What number is missing in the progression?';
 
-const playProgression = () => gameEngine(description, roundsForUser);
-export default playProgression;
+export default () => gameEngine(description, roundsForUser);

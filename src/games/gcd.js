@@ -1,6 +1,6 @@
 import gameEngine from '../engine.js';
 
-import { generateRandomNumber, quantityRounds } from '../index.js';
+import { generateRandomNumber, quantityRounds } from '../tools.js';
 
 const getGcd = (a, b) => {
   if (b === 0) {
@@ -32,5 +32,4 @@ const generateRounds = () => {
 const roundsForUser = generateRounds();
 const description = 'Find the greatest common divisor of given numbers.';
 
-const playGcd = () => gameEngine(description, roundsForUser);
-export default playGcd;
+export default () => gameEngine(description, roundsForUser);
