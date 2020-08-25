@@ -1,14 +1,14 @@
-import gameEngine from '../engine.js';
+import gameEngine, { quantityRounds } from '../engine.js';
 
-import { generateRandomNumber, quantityRounds } from '../tools.js';
+import generateRandomNumber from '../tools.js';
 
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => num % 2 === 0;
 
 const generateRound = () => {
   const number = generateRandomNumber(1, 10);
 
   const question = `${number}`;
-  const answer = isEven(number);
+  const answer = isEven(number) ? 'yes' : 'no';
 
   return [question, answer];
 };

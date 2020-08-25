@@ -1,6 +1,6 @@
-import gameEngine from '../engine.js';
+import gameEngine, { quantityRounds } from '../engine.js';
 
-import { generateRandomNumber, quantityRounds } from '../tools.js';
+import generateRandomNumber from '../tools.js';
 
 const getSign = () => {
   const operator = generateRandomNumber(0, 2);

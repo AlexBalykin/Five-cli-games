@@ -1,6 +1,6 @@
-import gameEngine from '../engine.js';
+import gameEngine, { quantityRounds } from '../engine.js';
 
-import { generateRandomNumber, quantityRounds } from '../tools.js';
+import generateRandomNumber from '../tools.js';
 
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
