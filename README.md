@@ -3,12 +3,45 @@
 
 [![Node CI](https://github.com/AlexBalykin/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/AlexBalykin/frontend-project-lvl1/actions)
 
-https://asciinema.org/a/KVtWG8RhR81vBHchcmOGsc9xv
+Install: sudo npm install brain-games
 
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
+
+    Калькулятор. Арифметические выражения, которые необходимо вычислить.
+    Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+    Определение четного числа.
+    Определение наибольшего общего делителя.
+    Определение простого числа.
+
+Пример игры:
+
+$ brain-progression
+Welcome to the Brain Game!
+What number is missing in this progression?
+May I have your name? Roman
+Hello, Roman!
+Question: 14 .. 18 20 22 24 26 28
+Your answer: 16 *Пользователь вводит ответ*
+Correct!
+Question: 5 6 7 8 9 .. 11 12
+Your answer: 10 # *Пользователь вводит ответ*
+Correct!
+Question: 12 15 18 21 .. 27 30 33
+Your answer: 24 # *Пользователь вводит ответ*
+Correct!
+Congratulations, Roman!
+
+brain-calc
 https://asciinema.org/a/2rm7LIFdOLlxFGafZekxYjX8W
 
+brain-even
+https://asciinema.org/a/KVtWG8RhR81vBHchcmOGsc9xv
+
+brain-gcd
 https://asciinema.org/a/JkvUwlpO8gABAGq2YXr8aCqN7
 
-https://asciinema.org/a/iSYLOyY3bsOS4KMayxeaqmHr7
-
+brain-prime
 https://asciinema.org/a/diFtaW1hepGSOUF5ft9g3B3Xs
+
+brain-progression
+https://asciinema.org/a/iSYLOyY3bsOS4KMayxeaqmHr7
