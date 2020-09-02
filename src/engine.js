@@ -9,15 +9,21 @@ export default (description, roundsForUser) => {
   console.log(description);
 
   for (const round of roundsForUser) {
-    console.log(`Question: ${round[0]}`);
+    const [roundIndexFirst, roundIndexSecond] = round;
+
+    console.log(`Question: ${roundIndexFirst}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (String(round[1]) === (userAnswer)) {
+
+    if (roundIndexSecond === (userAnswer)) {
       console.log('Correct!');
     }
-    if (String(round[1]) !== (userAnswer)) {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${round[1]}. Let's try again ${userName}`);
+
+    if (roundIndexSecond !== (userAnswer)) {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${roundIndexSecond}.
+Let's try again, ${userName}!`);
       return;
     }
   }
+
   console.log(`Congratulations, ${userName}!`);
 };

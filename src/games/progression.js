@@ -24,7 +24,7 @@ const generateRound = () => {
   const question = getQuestion(number, step, secretNumber);
   const answer = number + step * secretNumber;
 
-  return [question, answer];
+  return [question, String(answer)];
 };
 
 const generateRounds = () => {

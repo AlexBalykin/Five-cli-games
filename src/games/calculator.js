@@ -3,13 +3,14 @@ import gameEngine, { quantityRounds } from '../engine.js';
 import generateRandomNumber from '../tools.js';
 
 const getSign = () => {
-  const operator = generateRandomNumber(0, 2);
-  const operators = '+-*';
-  return operators[operator];
+  const signsCount = 2;
+  const randomSign = generateRandomNumber(0, signsCount);
+  const signs = '+-*';
+  return signs[randomSign];
 };
 
 const calculate = (number1, number2, sign) => {
-  let result = 0;
+  let result;
   switch (sign) {
     case '+':
       result = number1 + number2;
@@ -21,7 +22,7 @@ const calculate = (number1, number2, sign) => {
       result = number1 * number2;
       break;
     default:
-      return 'Oops';
+      return null;
   }
   return result;
 };
@@ -34,7 +35,7 @@ const generateRound = () => {
   const question = `${number1} ${sign} ${number2}`;
   const answer = calculate(number1, number2, sign);
 
-  return [question, answer];
+  return [question, String(answer)];
 };
 
 const generateRounds = () => {
