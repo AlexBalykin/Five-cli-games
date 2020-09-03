@@ -33,7 +33,7 @@ Congratulations, Roman!
 <code>sudo npm install brain-games-aleba</code>    
 
 ## brain-calc
-<script id="asciicast-2rm7LIFdOLlxFGafZekxYjX8W" src="https://asciinema.org/a/2rm7LIFdOLlxFGafZekxYjX8W.js" async></script>
+[![asciicast](https://asciinema.org/a/2rm7LIFdOLlxFGafZekxYjX8W.svg)](https://asciinema.org/a/2rm7LIFdOLlxFGafZekxYjX8W)
 
 ## brain-even
 [![asciicast](https://asciinema.org/a/KVtWG8RhR81vBHchcmOGsc9xv.svg)](https://asciinema.org/a/KVtWG8RhR81vBHchcmOGsc9xv)
