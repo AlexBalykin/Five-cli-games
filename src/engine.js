@@ -8,9 +8,7 @@ export default (description, roundsForUser) => {
   console.log(`Hello, ${userName}!`);
   console.log(description);
 
-  for (const round of roundsForUser) {
-    const [roundIndexFirst, roundIndexSecond] = round;
-
+  for (const [roundIndexFirst, roundIndexSecond] of roundsForUser) {
     console.log(`Question: ${roundIndexFirst}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
