@@ -18,13 +18,13 @@ What number is missing <span style="color: #000000;font-weight: bold">in </span>
 May I have your name? Roman
 Hello, Roman!
 Question: 14 .. 18 20 22 24 26 28
-Your answer: 16 <span style="color: #999988;font-style: italic"># Пользователь вводит ответ</span>
+Your answer: 16 <span style="color: #999988;font-style: italic">(Пользователь вводит ответ)</span>
 Correct!
 Question: 5 6 7 8 9 .. 11 12
-Your answer: 10 <span style="color: #999988;font-style: italic"># Пользователь вводит ответ</span>
+Your answer: 10 <span style="color: #999988;font-style: italic">(Пользователь вводит ответ)</span>
 Correct!
 Question: 12 15 18 21 .. 27 30 33
-Your answer: 24 <span style="color: #999988;font-style: italic"># Пользователь вводит ответ</span>
+Your answer: 24 <span style="color: #999988;font-style: italic">(Пользователь вводит ответ)</span>
 Correct!
 Congratulations, Roman!
 </code></pre>
