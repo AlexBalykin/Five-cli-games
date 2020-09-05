@@ -3,10 +3,10 @@ import gameEngine, { quantityRounds } from '../engine.js';
 import generateRandomNumber from '../tools.js';
 
 const getSign = () => {
-  const signsCount = 2;
-  const randomSign = generateRandomNumber(0, signsCount);
   const signs = '+-*';
-  return signs[randomSign];
+  const signsCount = signs.length;
+  const randomIndex = generateRandomNumber(0, signsCount);
+  return signs[randomIndex];
 };
 
 const calculate = (number1, number2, sign) => {
